@@ -5,6 +5,4 @@ __pycache__/
 .vscode
 .env
 
-db.sqlite3
-
 project.html
