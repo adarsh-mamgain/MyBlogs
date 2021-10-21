@@ -14,7 +14,7 @@ class App extends Component {
 
   async componentDidMount() {
     await axios
-      .get(`http://localhost:8000/api/blog/?format=json`)
+      .get(`/api/blog/?format=json`)
       .then((result) => {
         const blogList = result.data;
         this.setState({ blogList });
