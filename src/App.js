@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./index.css"
+import renderHTML from 'react-render-html';
 
 axios.defaults.xsrfCookieName = "csrftoken";
 axios.defaults.xsrfHeaderName = "X-CSRFToken";
@@ -25,22 +27,23 @@ class App extends Component {
     return newBlogs.map((item) => (
       <div>
         <h1>{item.title}</h1>
-        <p>{item.content}</p>
-        <p>{item.author}</p>
-        <small>{item.date}</small>
+        <p className="text-truncate">{renderHTML(item.content)}</p>
+        <p className="text-muted">{item.author}</p>
+        <small className="text-muted">{item.date}</small>
+        <hr />
       </div>
     ));
   };
 
   render() {
     return (
-      <main className="content">
-        <div className="row">
-          <div className="col-md-6 col-sm-10 mx-auto p-0">
-            <div className="card p-3">
-              <ul className="list-group list-group-flush">
-                {this.renderBlogs()}
-              </ul>
+      <main className="container px-4 px-lg-5">
+        <div className="row justify-content-center">
+          <div className="col-md-10 col-lg-8 col-xl-7 mx-3">
+          <h1 className="display-1">My Blogs</h1>
+            <br /><br />
+            <div className="blogpost">
+              {this.renderBlogs()}
             </div>
           </div>
         </div>
