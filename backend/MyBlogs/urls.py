@@ -23,5 +23,6 @@ router.register(r'blog', views.BlogView, 'Blog')
 
 urlpatterns = [
     path('administrator/', admin.site.urls),
-    path('api/', include(router.urls))
+    path('api/', include(router.urls)),
+    path('', views.FrontendAppView.as_view(), name="index")
 ]
