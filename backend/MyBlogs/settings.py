@@ -142,6 +142,8 @@ MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
     os.path.join('build', 'static'),
+    os.path.join('public'),
+    os.path.join('static')
 ]
 
 # Default primary key field type
