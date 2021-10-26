@@ -10,13 +10,16 @@ function Navigation(props) {
             </Link>
             <div className="d-flex">
                 <form className="me-auto px-4">
-                    <input className="form-control me-2 border-0" type="search" placeholder="Search..." aria-label="Search" style={{border: 0}} />
+                    <div class="input-group">
+                        <span className="input-group-text"><i className="fas fa-search"></i></span>
+                        <input className="form-control me-2" type="search" placeholder="Can't Search... :)" aria-label="Search" />
+                    </div>
                 </form>
                 <button className="navbar-toggler px-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarScroll">
-                    <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll px-4">{/* style={{marginRight: spacing + 'em'}}*/}
+                    <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll px-4">
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to="">Home</Link>
                         </li>

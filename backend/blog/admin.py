@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.db import models
 from blog.models import Blog
 
 # Register your models here.
@@ -7,7 +6,7 @@ from blog.models import Blog
 
 class BlogAdmin(admin.ModelAdmin):
     readonly_fields = ("author",)
-    list_display = ("id", "title", "date", "slug")
+    list_display = ("title", "date", "slug")
     prepopulated_fields = {'slug': ('title',)}
 
 
