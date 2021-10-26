@@ -19,3 +19,11 @@
   font-size: 24px;
   font-weight: 300;
 }
+
+.blogpost small {
+  font-size: 18px;
+}
+
+.nav .nav-link {
+  font-size: 18px;
+}
