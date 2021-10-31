@@ -28,4 +28,4 @@ urlpatterns = [
     path('api/', include(router.urls), name="api"),
     re_path(r'^(?:.*)/?$', views.FrontendAppView.as_view(), name="index"),
     path('', views.FrontendAppView.as_view(), name="index")
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

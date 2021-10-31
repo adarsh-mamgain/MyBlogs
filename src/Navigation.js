@@ -10,7 +10,7 @@ function Navigation(props) {
             </Link>
             <div className="d-flex">
                 <form className="me-auto px-4">
-                    <div class="input-group">
+                    <div className="input-group">
                         <span className="input-group-text"><i className="fas fa-search"></i></span>
                         <input className="form-control me-2" type="search" placeholder="Can't Search... :)" aria-label="Search" />
                     </div>

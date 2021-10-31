@@ -6,8 +6,8 @@ from blog.models import Blog
 
 class BlogAdmin(admin.ModelAdmin):
     readonly_fields = ("author",)
-    list_display = ("title", "date", "slug")
-    prepopulated_fields = {'slug': ('title',)}
+    list_display = ("title", "date", "time", "slug")
+    prepopulated_fields = {'slug': ("date", "title")}
 
 
 admin.site.register(Blog, BlogAdmin)
