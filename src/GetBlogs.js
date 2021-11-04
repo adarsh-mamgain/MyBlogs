@@ -28,10 +28,9 @@ class GetBlogs extends React.Component {
                 <div className="row justify-content-center align-items-center">
                     <div className="col-7">
                         <h1 className="display-1 my-4">{blog.title}</h1>
-                        <p dangerouslySetInnerHTML={{__html: marked(DOMPurify.sanitize(blog.content))}}></p>
+                        <p dangerouslySetInnerHTML={{__html: marked(DOMPurify.sanitize(blog.markdown))}}></p>
                         <p className="text-muted">{blog.author}</p>
                         <p className="text-muted">{blog.date} {blog.time}</p>
-                        <hr />
                     </div>
                 </div>
             </main>

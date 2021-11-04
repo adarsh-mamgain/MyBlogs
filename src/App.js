@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import "./index.css"
 import Home from "./Home";
 import Blogs from "./Blogs"
@@ -7,9 +6,6 @@ import GetBlogs from "./GetBlogs";
 import Navigation from "./Navigation";
 // import CreateBlog from "./CreateBlog";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-axios.defaults.xsrfCookieName = "csrftoken";
-axios.defaults.xsrfHeaderName = "X-CSRFToken";
 
 class App extends React.Component {
     render() {

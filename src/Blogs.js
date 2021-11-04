@@ -25,14 +25,12 @@ class Blogs extends React.Component {
     renderBlogs = () => {
         const newBlogs = this.state.blogList;
         return newBlogs.map((item) => (
-            <div className="row justify-content-center align-items-center">
-                <div className="col-7">
-                    <Link className="link-dark text-decoration-none" aria-current="page" to={`/blog/${item.slug}`}><h1 className="display-1 my-4">{item.title}</h1></Link>
-                    <p className="text-truncate" dangerouslySetInnerHTML={{__html: marked(DOMPurify.sanitize(item.content))}}></p>
-                    <p className="text-muted">{item.author}</p>
-                    <p className="text-muted">{item.date} {item.time}</p>
-                    <hr />
-                </div>
+            <div key={item.slug} className="col-7">
+                <Link className="link-dark text-decoration-none" aria-current="page" to={`/blog/${item.slug}`}><h1 className="display-1 my-4">{item.title}</h1></Link>
+                <p className="text-truncate" dangerouslySetInnerHTML={{__html: marked(DOMPurify.sanitize(item.markdown))}}></p>
+                <p className="text-muted">{item.author}</p>
+                <p className="text-muted">{item.date} {item.time}</p>
+                <hr />
             </div>
         ));
     };
@@ -40,7 +38,9 @@ class Blogs extends React.Component {
     render() {
         return (
             <main className="container px-4 px-lg-5">
-                { this.renderBlogs() }
+                <div className="row justify-content-center align-items-center">
+                    { this.renderBlogs() }
+                </div>
             </main>
         )
     };

@@ -1,12 +1,10 @@
-from django.shortcuts import render, HttpResponse
+import os
+import logging
+from django.shortcuts import HttpResponse
 from rest_framework import viewsets
 from blog.serializers import BlogSerializer
 from blog.models import Blog
-import os
-import logging
 from django.views import View
-from django.conf import settings
-from django.http import HttpResponse, HttpResponseNotFound
 # Create your views here.
 
 
@@ -24,7 +22,7 @@ class FrontendAppView(View):
 
     def get(self, request):
         try:
-            with open(self.index_file_path) as f:
+            with open(self.index_file_path, encoding="utf-8") as f:
                 return HttpResponse(f.read())
         except FileNotFoundError:
             logging.exception('Production build of app not found')
