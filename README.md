@@ -13,11 +13,11 @@ A personal blogging website made using **React.js** and **Django REST Framework*
 
 ## Tech Stack
 
-**Client/Frontend:** React, Bootstrap
+**Client/Frontend:** React, Material UI
 
-**Server/Backend:** Node, Express, Django
+**Server/Backend:** Node, Django
 
-**API:** Django REST
+**API:** Django Rest Framework
 
 **DBMS:** PostgreSQL
 
@@ -128,7 +128,7 @@ npm start
 
 - Awesome **UX/UI** 🎨 created by [**Tanmay Chakrabarty**](https://github.com/tanmaychk)
 
-- [README created using](https://readme.so/editor)
+- README created using https://readme.so/editor
 
 
 ## Author 🧑
@@ -141,4 +141,3 @@ npm start
 📧 Email: am7722@srmist.edu.in
 
 ➕ LinkedIn: https://www.linkedin.com/in/adarsh-mamgain/
-  

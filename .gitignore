@@ -28,5 +28,7 @@ venv
 
 __pycache__/
 
+/frontend/.gitignore
+
 backend/staticfiles
 project.html

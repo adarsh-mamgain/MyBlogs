@@ -1,1 +1,2 @@
-web: gunicorn --pythonpath backend MyBlogs.wsgi
+web: gunicorn MyBlogs.wsgi
+web: /frontend npm run build
