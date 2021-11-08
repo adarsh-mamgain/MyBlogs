@@ -27,7 +27,7 @@ function Navigation(props) {
                 <AppBar color={"primary"}>
                     <Toolbar>
                         <Box m={1} p={1}>
-                            <Link to=""><img src="/static/brand-logo.svg" alt="brand-logo" /></Link>
+                            <Link to=""><img src="/static/images/brand-logo.svg" alt="brand-logo" /></Link>
                         </Box>
                         <Box m={1} p={1}>
                             <Button variant="outlined" style={{ borderRadius: 20 }} href="/">Home</Button>

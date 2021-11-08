@@ -1,0 +1,29 @@
+.blogpost a {
+  color: #000;
+  text-decoration: none;
+}
+
+.blogpost a:link {
+  color: black !important;
+}
+
+.blogpost a:hover {
+  color: blue !important;
+}
+
+.blogpost h2 {
+  font-weight: 900;
+}
+
+.blogpost p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.blogpost small {
+  font-size: 18px;
+}
+
+.nav .nav-link {
+  font-size: 18px;
+}
