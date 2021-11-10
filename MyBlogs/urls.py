@@ -26,7 +26,5 @@ router.register(r'blog', views.BlogView, 'Blog')
 urlpatterns = [
     path('administrator/', admin.site.urls, name="administrator"),
     path('api/', include(router.urls), name="api"),
-    path('', include('frontend.urls')),
-    # re_path(r'^(?:.*)/?$', views.FrontendAppView.as_view(), name="index"),
-    # path('', views.FrontendAppView.as_view(), name="index")
+    path('', include('frontend.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

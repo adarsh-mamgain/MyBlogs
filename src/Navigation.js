@@ -22,7 +22,7 @@ function Navigation(props) {
   return (
     <Box style={{ flexGrow: 1 }}>
         <HideOnScroll>
-            <AppBar color={ "primary" }>
+            <AppBar>
                 <Toolbar>
                     <Box m={1} p={1}>
                         <Link to=""><img src="/static/images/brand-logo.svg" alt="brand-logo" /></Link>

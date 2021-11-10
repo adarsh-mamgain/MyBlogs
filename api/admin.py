@@ -6,7 +6,7 @@ from api.models import Blog
 
 class BlogAdmin(admin.ModelAdmin):
     readonly_fields = ("author",)
-    list_display = ("title", "date", "time", "slug")
+    list_display = ("id", "title", "date", "time", "slug", "publish")
     prepopulated_fields = {"slug": ("title",)}
 
 
