@@ -1,6 +1,3 @@
-import os
-import logging
-from django.shortcuts import HttpResponse
 from rest_framework import viewsets
 from api.serializers import BlogSerializer
 from api.models import Blog

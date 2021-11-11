@@ -117,9 +117,9 @@ DATABASES = {
 
 8. Finally run the following command to start backend and frontend services 
 ```sh
-python backend/manage.py runserver
+python manage.py runserver
 
-npm start
+npm run dev
 ```
 
 ---
@@ -130,6 +130,7 @@ npm start
 
 - README created using https://readme.so/editor
 
+- Markdown editor for blogs https://stackedit.io/
 
 ## Author 🧑
 

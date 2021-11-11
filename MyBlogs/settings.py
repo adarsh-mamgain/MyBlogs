@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
+    'django.contrib.sites', 
 ]
 
 MIDDLEWARE = [
@@ -163,3 +165,5 @@ conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
+
+SITE_ID = 1
